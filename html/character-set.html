@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Character Set Inspector</title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/./charset-inspector/style/main.css" />
+    <script src="./bower_components/requirejs/require.js"></script>
+    <script>
+    define('setup',[], function() {
+        // example setup
+
+        var shared = [
+                'charsets/arabic_unique-glyphs.nam'
+              , 'charsets/mirza.ucd'
+              , 'charsets/amiri.ucd'
+              , 'charsets/jomhuria.ucd'
+        ];
+
+        return {
+            showControls: false // default True
+          , showLegend: false // // default True
+          , dropDownFiles: {
+                // [[array of filenames], slected index]
+                credit: [shared, 0]
+              , debit: [shared, 1]
+            }
+        };
+    });
+
+    require(['./charset-inspector-config.js'], function(){
+        require(['charset-inspector/main']);
+    });
+    </script>
+</head>
+<body>
+    <h1>Mirza Character Set Inspector</h1>
+    <p>Visualize and compare unicode encoded character sets.</p>
+    <p>Note: the Mirza character set is not yet fetched live from the sources. It must be updated manually.</p>
+    <main></main>
+    <footer>
+    <h2>Free/Libre Open Source</h2>
+        <p>GPL v3. For source code, bug reports, feature requests or more information check out
+        <a href="https://github.com/graphicore/charset-inspector">the repository at GitHub</a>.</p>
+    </footer>
+</body>
+</html>
