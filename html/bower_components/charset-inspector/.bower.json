@@ -1,5 +1,6 @@
 {
   "name": "charset-inspector",
+  "version": "0.0.1",
   "authors": [
     "Lasse Fister <commander@graphicore.de>"
   ],
@@ -32,14 +33,14 @@
     "test",
     "tests"
   ],
-  "_release": "a3ad37030a",
+  "_release": "0.0.1",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "a3ad37030ab4fc8eb15434213a2d2543dc8a3c66"
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "938acfc361988203a0f7745049e76a5e32ddb404"
   },
   "_source": "git://github.com/graphicore/charset-inspector.git",
-  "_target": "*",
-  "_originalSource": "graphicore/charset-inspector",
+  "_target": "~0.0.1",
+  "_originalSource": "charset-inspector",
   "_direct": true
 }
